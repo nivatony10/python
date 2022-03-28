@@ -19,7 +19,7 @@ def network():
 	print(details)
 	
 	w_time = time.time() + 60*2
-	open("cpu.txt", "w)
+	open("cpu.txt", "w")
 	graph=[]
 	print("monitoring CPU and Creating graph. Please wait for 2 minutes")
 	
