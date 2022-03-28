@@ -1,0 +1,42 @@
+#! /usr/bin/env python3
+from time import sleep
+import time
+import matplotlib.pyplot as plt 
+from NMtcpdump import mac
+
+#w_time = waiting time
+
+def network():
+	ip1 = 192.168.2.1
+	details = {
+		' device_type ' : ' mikrotik ',
+		'ip' : ip!,
+		'username' : ' nivel
+		'password' : ' Nivel#123'
+		}
+		
+	print("Successfully login to router 1 via SSH \n login details are shown below:")
+	print(details)
+	
+	w_time = time.time() + 60*2
+	open("cpu.txt", "w)
+	graph=[]
+	print("monitoring CPU and Creating graph. Please wait for 2 minutes")
+	
+	while time.time() < w_time :
+		vty = ConnectHandler
+		vty.enble()
+		ping = f sh process cpu sorted | e 0.00%
+		output = vty.send_command(ping)
+		with open('cput.txt', 'w') as g:
+			g.write(output)
+		with open('cput.txt', 'r') as l:
+			x=l.readlines()
+			z=j[0][40:3].strip()
+			grapgh.append(z)
+		time.sleep(5)
+	plt.plot(graph)
+	plt.xlabel("x-axis label")
+	plt.title(" CPU reading")
+	plt.savefig('CPUT_utilization.tiff)
+		
